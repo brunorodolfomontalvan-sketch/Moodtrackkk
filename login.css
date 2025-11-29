@@ -1,109 +1,114 @@
-/* Contenedor principal: Centra el formulario */
+/* ======================= */
+/*   LOGIN ESTILO MOODTRACK */
+/* ======================= */
+
+/* Fondo suave celeste */
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    /* Fondo atractivo para la vista de escritorio */
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    padding: 1.25rem; /* 20px de padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #d8f2ff; /* MoodTrack */
+  padding: 1.25rem;
 }
 
-/* La caja del formulario */
+/* Caja estilo tarjeta MoodTrack */
 .login-box {
-    background: white;
-    padding: 2.5rem; /* 40px */
-    border-radius: 0.625rem; /* 10px */
-    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); /* Sombra */
-    width: 100%;
-    max-width: 25rem; /* 400px, el ancho máximo */
-    text-align: center;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid #5ec8f8; /* borde celeste MoodTrack */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 25rem;
+  text-align: center;
 }
 
+/* Título */
 .login-box h2 {
-    margin-bottom: 1.5625rem; /* 25px */
-    color: #333;
-    font-size: 1.8rem;
+  margin-bottom: 1.5625rem;
+  color: #3ba6e6; /* celeste fuerte MoodTrack */
+  font-size: 1.8rem;
 }
 
-/* División para agrupar Label e Input */
+/* Groups */
 .input-group {
-    margin-bottom: 1.25rem; /* 20px */
-    text-align: left;
+  margin-bottom: 1.25rem;
+  text-align: left;
 }
 
 .input-group label {
-    display: block;
-    margin-bottom: 0.5rem; /* 8px */
-    font-weight: bold;
-    color: #555;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #0077b6; /* azul suave del formulario MoodTrack */
 }
 
+/* Inputs */
 .input-group input {
-    width: 100%;
-    padding: 0.75rem; /* 12px */
-    border: 1px solid #ccc;
-    border-radius: 0.3125rem; /* 5px */
-    font-size: 1rem;
-    transition: border-color 0.3s;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #aee4ff; /* celeste tenue MoodTrack */
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #eefaff; /* fondo azul suave MoodTrack */
+  transition: border-color 0.3s;
 }
 
 .input-group input:focus {
-    border-color: #2575fc;
-    outline: none;
+  border-color: #3ba6e6;
+  outline: none;
 }
 
-/* Estilo del botón */
+/* Botón */
 .login-button {
-    width: 100%;
-    padding: 0.75rem; /* 12px */
-    border: none;
-    border-radius: 0.3125rem; /* 5px */
-    background-color: #2575fc;
-    color: white;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 0.625rem; /* 10px */
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #5ec8f8; /* celeste principal MoodTrack */
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.625rem;
+  font-weight: 600;
 }
 
 .login-button:hover {
-    background-color: #0e63e2;
+  background-color: #3ba6e6; /* hover más oscuro */
 }
 
-/* -------------------------------------- */
-/* MEDIA QUERY: RESPONSIVE MÓVILES */
-/* -------------------------------------- */
-
-/* Estilos aplicados cuando la pantalla mide 600px o menos */
+/* ======================= */
+/*   RESPONSIVE MÓVIL */
+/* ======================= */
 @media (max-width: 600px) {
-    
-    /* El contenedor principal simula una vista de aplicación */
-    .login-container {
-        padding: 0; /* Quita el padding exterior */
-        background: #fff; /* Fondo blanco liso */
-        align-items: flex-start; /* Mueve el formulario arriba */
-        min-height: auto; 
-    }
+  /* Fondo estilo app móvil */
+  .login-container {
+    padding: 0;
+    background: white;
+    align-items: flex-start;
+    min-height: auto;
+  }
 
-    /* La caja del formulario se expande y pierde los adornos de tarjeta */
-    .login-box {
-        padding: 1.5rem; /* 24px de padding interno */
-        margin-top: 2rem; /* 32px de espacio superior */
-        width: 100%;
-        max-width: 100%;
-        box-shadow: none; /* Elimina la sombra */
-        border-radius: 0; /* Elimina el borde redondeado */
-        border: none;
-    }
+  /* Caja sin bordes ni sombras (estilo app) */
+  .login-box {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+  }
 
-    .login-box h2 {
-        font-size: 1.7rem; /* Ajuste sutil del tamaño */
-        text-align: left;
-    }
-    
-    .input-group input {
-        padding: 1rem; /* Aumenta el padding para un mejor toque táctil (16px) */
-    }
+  .login-box h2 {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+
+  .input-group input {
+    padding: 1rem;
+  }
 }
