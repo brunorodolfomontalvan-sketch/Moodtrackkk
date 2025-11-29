@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MoodTrack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <img
+        src="img/logo-moodtrack.png"
+        alt="MoodTrack Logo"
+        class="navbar-logo"
+      />
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+      <ul class="navbar-menu">
+        <li>
+          <a href="#">Sobre MoodTrack</a>
+          <ul class="submenu">
+            <li><a href="#">¿Qué es MoodTrack?</a></li>
+            <li><a href="#">¿Cómo funciona?</a></li>
+            <li><a href="#">Beneficios</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Funciones</a>
+          <ul class="submenu">
+            <li><a href="#">Registro de emociones</a></li>
+            <li><a href="#">Recomendaciones</a></li>
+            <li><a href="#">Estadísticas</a></li>
+            <li><a href="#">Chat de apoyo</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">MoodTrack Digital</a>
+          <ul class="submenu">
+            <li><a href="#">Versión móvil</a></li>
+            <li><a href="#">Versión web</a></li>
+            <li><a href="#">Integraciones</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Contáctanos</a>
+          <ul class="submenu">
+            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Correo</a></li>
+            <li><a href="#">Ubicación</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <script src="menu_toggle.js"></script>
+    </nav>
+
+    <!-- ================== SECCIÓN 1: SOBRE LA APP ================== -->
+    <section class="app-section">
+      <div class="app-content">
+        <div class="app-text">
+          <h2>Sobre MoodTrack</h2>
+          <p>
+            MoodTrack es una aplicación diseñada para acompañarte en tu
+            bienestar emocional. Funciona como un asistente personal que te
+            ayuda a expresar cómo te sientes, comprender tus emociones y
+            encontrar recomendaciones para mejorar tu día.
+          </p>
+          <p>
+            La app analiza patrones, registra estados de ánimo e identifica
+            momentos clave donde podrías necesitar apoyo emocional. Su objetivo
+            es ayudarte a mejorar tu salud mental de forma constante, sencilla y
+            personalizada.
+          </p>
+        </div>
+
+        <div class="app-image">
+          <img
+            src="img/app-preview.png"
+            alt="MoodTrack App"
+            class="image-preview"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== SECCIÓN 2: MOODTRACK DIGITAL ================== -->
+    <section class="digital-section">
+      <div class="digital-content">
+        <div class="digital-text">
+          <h2>MoodTrack Digital</h2>
+          <p>
+            Nuestra plataforma digital te permite registrar emociones, recibir
+            consejos personalizados, acceder a ejercicios de respiración,
+            reflexiones guiadas y visualizar tu progreso emocional a lo largo
+            del tiempo.
+          </p>
+          <p>
+            Todo esto está disponible desde tu celular o computadora con una
+            interfaz clara, intuitiva y pensada para ayudarte en tu bienestar
+            diario.
+          </p>
+        </div>
+
+        <div class="digital-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BHACKCNDMW8"
+            title="MoodTrack Demo Video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== FORMULARIO DE AYUDA ================== -->
+    <section class="help-form-section">
+      <div class="help-form-container">
+        <h2>Solicitar ayuda emocional</h2>
+        <p>Completa tus datos y te brindaremos orientación personalizada.</p>
+
+        <form class="help-form">
+          <div class="form-field">
+            <label for="nombre">Nombre completo</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre completo"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="pais">País</label>
+            <select name="pais" id="pais">
+              <option value="">Seleccione un país</option>
+              <option value="Perú">Perú</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Brasil">Brasil</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label>¿Qué deseas trabajar?</label>
+            <ul class="checkbox-list">
+              <li>
+                <label
+                  ><input type="checkbox" value="ansiedad" /> Ansiedad</label
+                >
+              </li>
+              <li>
+                <label><input type="checkbox" value="estres" /> Estrés</label>
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" value="autoestima" />
+                  Autoestima</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" value="emociones" /> Manejo de
+                  emociones</label
+                >
+              </li>
+              <li>
+                <label><input type="checkbox" value="otro" /> Otro</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-field">
+            <label>Género</label>
+            <ul class="radio-list">
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="M" /> Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="F" /> Femenino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="N" /> Prefiero no
+                  decirlo</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit" class="form-submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================== FOOTER ================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="img/logo-moodtrack.png" alt="Logo" class="footer-logo" />
+          <p>MoodTrack</p>
+          <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Protección de Datos</a>
+        </div>
+
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

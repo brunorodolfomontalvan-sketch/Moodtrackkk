@@ -1,0 +1,283 @@
+/* ======================= */
+/*        NAVBAR           */
+/* ======================= */
+
+.navbar {
+  position: fixed;
+  background-color: #aee4ff;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar-menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: #003b5c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.navbar-menu li a:hover {
+  color: #0077b6;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 150px;
+  background-color: #d8f2ff;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-menu li:hover .submenu {
+  display: block;
+}
+
+/* ======================= */
+/*   SECCIÓN 1: SOBRE APP  */
+/* ======================= */
+
+.app-section {
+  padding: 120px 20px 60px;
+  background-color: #f5f8fa;
+}
+
+.app-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.app-text {
+  flex: 1;
+}
+
+.app-text h2 {
+  color: #3ba6e6;
+}
+
+.app-text p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.app-image {
+  flex: 1;
+}
+
+.image-preview {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  height: auto;
+}
+
+/* ======================= */
+/*   SECCIÓN 2: DIGITAL    */
+/* ======================= */
+
+.digital-section {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.digital-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.digital-text {
+  flex: 1;
+}
+
+.digital-text h2 {
+  color: #3ba6e6;
+}
+
+.digital-text p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.digital-video {
+  flex: 1;
+}
+
+/* ======================= */
+/*   FORMULARIO MOODTRACK  */
+/* ======================= */
+
+.help-form-section {
+  background-color: #d8f2ff;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.help-form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border: 2px solid #5ec8f8;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-field {
+  background-color: #eefaff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.help-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #0077b6;
+}
+
+.help-form input[type="text"],
+.help-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aee4ff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.checkbox-list,
+.radio-list {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  background-color: #eefaff;
+  border-radius: 0.5rem;
+}
+
+.form-submit {
+  background-color: #5ec8f8;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.form-submit:hover {
+  background-color: #3ba6e6;
+}
+
+/* ======================= */
+/*          FOOTER         */
+/* ======================= */
+
+.footer {
+  background-color: #003b5c;
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #c7e4f8;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
